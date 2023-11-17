@@ -6,6 +6,10 @@ import pandas as pd
 @click.group()
 def cmd_group():
     """Group with two subcommands generating the sin en tan of x values from 0 to 2 pi, with the option to choose the number of x values between 0 and 2 pi.
+
+    Args: none 
+    
+    Return: none
     """
     pass
 
@@ -16,7 +20,7 @@ def cmd_group():
     default=1,
     type=int)
 def sin(number):
-    """Generating the sinus between 0 and 2 pi  and printing the dataframe of x from 0 to 2 pi and its corresponding sin.
+    """Generating the sinus between 0 and 2 pi and printing the dataframe of x from 0 to 2 pi and its corresponding sin.
 
     Args:
         number (int): Number of x values between 0 and 2 pi
